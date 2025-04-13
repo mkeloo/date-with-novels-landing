@@ -4,13 +4,14 @@ import HomeClient from "@/components/HomeClient";
 
 // Export SEO metadata for this route
 export const metadata = {
+  metadataBase: new URL("https://datewithnovels.com"),
   title: "DateWithNovels — Coming Soon!",
   description:
-    "Sign up to be the first to know when we launch our handcrafted chunky blankets, keychains, and more!",
+    "SGet ready for our personalized Blind Date With a Book experience—featuring curated packages with cozy extras like themed tumblers and surprise goodies.",
   openGraph: {
     title: "DateWithNovels — Coming Soon!",
     description:
-      "Discover handcrafted chunky blankets, unique keychains, and exciting experiences like 'Blind Date with a Book'! Sign up for updates or visit our Etsy store.",
+      "Get ready for our personalized Blind Date With a Book experience—featuring curated packages with cozy extras like themed tumblers and surprise goodies.",
     url: "https://www.etsy.com/shop/DateWithNovels",
     siteName: "DateWithNovels",
     images: [
@@ -18,7 +19,7 @@ export const metadata = {
         url: "/logo.webp",
         width: 1200,
         height: 630,
-        alt: "CrafteDesignz logo and handcrafted products",
+        alt: "DateWithNovels Logo",
       },
     ],
     type: "website",
