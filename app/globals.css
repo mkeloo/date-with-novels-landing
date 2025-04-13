@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Coustard:wght@400;900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Peta:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sono:wght@200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
+
 @import "tailwindcss";
 @import "tw-animate-css";
 
@@ -5,11 +12,18 @@
 
 @theme inline {
 
-  --color-nyanza: var(--nyanza);
-  --color-mauve: var(--mauve);
-  --color-amaranth: var(--amaranth);
-  --color-vanilla: var(--vanilla);
-  --color-uranian: var(--uranian);
+  --color-ui-accent: var(--nyanza);
+  --color-ui-secondary: var(--mauve);
+  --color-ui-primary: var(--amaranth);
+  --color-ui-surface: var(--vanilla);
+  --color-ui-input: var(--uranian);
+
+  /* Font Families */
+  --font-coustard: "Coustard", serif;
+  --font-nunito: "Nunito", sans-serif;
+  --font-sriracha: "Sriracha", sans-serif;
+  --font-lexend: "Lexend Peta", serif;
+  --font-sono: "Sono", sans-serif;
 
 
   --color-background: var(--background);
@@ -134,6 +148,6 @@
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-ui-accent text-foreground;
   }
 }
