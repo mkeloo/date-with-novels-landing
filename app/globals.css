@@ -4,6 +4,14 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
+
+  --color-nyanza: var(--nyanza);
+  --color-mauve: var(--mauve);
+  --color-amaranth: var(--amaranth);
+  --color-vanilla: var(--vanilla);
+  --color-uranian: var(--uranian);
+
+
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
@@ -44,6 +52,14 @@
 }
 
 :root {
+
+  /* Theme Colors */
+  --nyanza: oklch(94.68% 0.048 159.25);
+  --mauve: oklch(85.90% 0.085 312.66);
+  --amaranth: oklch(78.09% 0.129 351.49);
+  --vanilla: oklch(91.96% 0.070 102.37);
+  --uranian: oklch(87.30% 0.066 230.55);
+
   --radius: 0.625rem;
   --background: oklch(1 0 0);
   --foreground: oklch(0.129 0.042 264.695);
@@ -116,6 +132,7 @@
   * {
     @apply border-border outline-ring/50;
   }
+
   body {
     @apply bg-background text-foreground;
   }
